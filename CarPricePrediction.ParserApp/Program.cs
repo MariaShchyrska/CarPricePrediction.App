@@ -6,6 +6,7 @@ using CarPricePrediction.Core.Context;
 using CarPricePrediction.Core.Entities;
 using System.Text.RegularExpressions;
 
+throw new ArgumentException("------------");
 Console.WriteLine($"{DateTime.Now.ToString("HH:mm:ss")} -- APP STARTED --");
 
 using (var ctx = new CarsContext())

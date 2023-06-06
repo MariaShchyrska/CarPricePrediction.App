@@ -5,15 +5,17 @@ VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{436127D9-C100-4FB0-A7A9-43A782EA2780}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarPricePrediction.Core", "CarPricePrediction.Core\CarPricePrediction.Core.csproj", "{8A8F8A59-637F-4D31-8ED5-A1F50B8C190F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarPricePrediction.Core", "CarPricePrediction.Core\CarPricePrediction.Core.csproj", "{8A8F8A59-637F-4D31-8ED5-A1F50B8C190F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarPricePrediction.Repositories", "CarPricePrediction.Repositories\CarPricePrediction.Repositories.csproj", "{3B64B3DC-0EB0-4872-A766-6C7EC9B2F2FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarPricePrediction.Repositories", "CarPricePrediction.Repositories\CarPricePrediction.Repositories.csproj", "{3B64B3DC-0EB0-4872-A766-6C7EC9B2F2FB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarPricePrediction.WinApp", "CarPricePrediction\CarPricePrediction.WinApp.csproj", "{81AE8B9D-3698-40D5-98ED-7E5C2964D1DC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "helper", "helper", "{5936AEF6-0F12-424E-9775-B20C135EC442}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarPricePrediction.ParserApp", "CarPricePrediction.ParserApp\CarPricePrediction.ParserApp.csproj", "{90056924-B7E8-4D19-AE3B-0C275704A888}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarPricePrediction.ParserApp", "CarPricePrediction.ParserApp\CarPricePrediction.ParserApp.csproj", "{90056924-B7E8-4D19-AE3B-0C275704A888}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarPricePredictionApp.Test", "CarPricePredictionApp.Test\CarPricePredictionApp.Test.csproj", "{0A6B2A2E-0A98-473F-BC6C-99CE91891AEE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +39,10 @@ Global
 		{90056924-B7E8-4D19-AE3B-0C275704A888}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90056924-B7E8-4D19-AE3B-0C275704A888}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90056924-B7E8-4D19-AE3B-0C275704A888}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A6B2A2E-0A98-473F-BC6C-99CE91891AEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A6B2A2E-0A98-473F-BC6C-99CE91891AEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A6B2A2E-0A98-473F-BC6C-99CE91891AEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A6B2A2E-0A98-473F-BC6C-99CE91891AEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +52,7 @@ Global
 		{3B64B3DC-0EB0-4872-A766-6C7EC9B2F2FB} = {436127D9-C100-4FB0-A7A9-43A782EA2780}
 		{81AE8B9D-3698-40D5-98ED-7E5C2964D1DC} = {436127D9-C100-4FB0-A7A9-43A782EA2780}
 		{90056924-B7E8-4D19-AE3B-0C275704A888} = {5936AEF6-0F12-424E-9775-B20C135EC442}
+		{0A6B2A2E-0A98-473F-BC6C-99CE91891AEE} = {5936AEF6-0F12-424E-9775-B20C135EC442}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {95D3AC67-6E66-4069-AF23-7EA7BD62B205}
