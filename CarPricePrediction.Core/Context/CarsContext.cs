@@ -78,5 +78,6 @@ namespace CarPricePrediction.Core.Context
             optionsBuilder.UseSqlServer(@"Server=USER-PC\SQLEXPRESS;Database=CarDb_v1;Trusted_Connection=True;TrustServerCertificate=True;");
             base.OnConfiguring(optionsBuilder);
         }
+
     }
 }

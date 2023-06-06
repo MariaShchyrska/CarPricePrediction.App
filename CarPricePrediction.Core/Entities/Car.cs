@@ -16,16 +16,16 @@ namespace CarPricePrediction.Core.Entities
         public string Owner { get; set; }
         public int Year { get; set; }
         public Guid? CompanyId { get; set; }
-        public Company? Company { get; set; }
-
-        public Guid? LabelId { get; set; }
-        public Label? Label { get; set; }
-
-        public Guid? LocationId { get; set; }
-        public Location? Location { get; set; }
+        public virtual Company? Company { get; set; }
 
         public Guid? FuelTypeId { get; set; }
-        public Fuel_type? Fuel_Type { get; set; }
+        public virtual Fuel_type? Fuel_Type { get; set; }
+
+        public Guid? LabelId { get; set; }
+        public virtual Label? Label { get; set; }
+
+        public Guid? LocationId { get; set; }
+        public virtual Location? Location { get; set; }
     }
 
     /*public class Car : INamedEntity<Guid>
