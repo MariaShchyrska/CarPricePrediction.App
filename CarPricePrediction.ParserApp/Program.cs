@@ -25,7 +25,7 @@ using (var ctx = new CarsContext())
         List<string> fuel_types = new List<string>();
         List<string> companies = new List<string>();
 
-        /*foreach (var r in records)
+        foreach (var r in records)
         {
             if (!string.IsNullOrEmpty(r.Label))
                 labels.Add(r.Label);
@@ -52,7 +52,7 @@ using (var ctx = new CarsContext())
         ctx.Companies.AddRange(companies.Distinct().Select(x => new Company
         {
             Name = x
-        })); */
+        }));
 
         ctx.SaveChanges();
         Console.WriteLine($"{DateTime.Now.ToString("HH:mm:ss")} -- LABELS, LOCATIONS, FUEL_TYPES AND COMPANIES ADDED --");

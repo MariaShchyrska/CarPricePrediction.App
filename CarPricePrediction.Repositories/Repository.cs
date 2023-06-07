@@ -30,7 +30,10 @@ namespace CarPricePrediction.Repositories
             return ctx.Set<TEntity>().Find(key);
         }
 
-        public IEnumerable<TEntity> GetAll() => ctx.Set<TEntity>().ToList();
+        public IEnumerable<TEntity> GetAll()
+        {
+            return ctx.Set<TEntity>().ToList();
+        }
 
         public void Save()
         {

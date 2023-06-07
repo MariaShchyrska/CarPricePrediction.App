@@ -18,7 +18,7 @@ namespace CarPricePrediction.Core.Entities
         public Guid? CompanyId { get; set; }
         public virtual Company? Company { get; set; }
 
-        public Guid? FuelTypeId { get; set; }
+        public Guid? Fuel_TypeId { get; set; }
         public virtual Fuel_type? Fuel_Type { get; set; }
 
         public Guid? LabelId { get; set; }

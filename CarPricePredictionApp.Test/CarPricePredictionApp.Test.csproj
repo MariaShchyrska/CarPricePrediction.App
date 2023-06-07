@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CarPricePrediction.Core\CarPricePrediction.Core.csproj" />
+    <ProjectReference Include="..\CarPricePrediction.Repositories\CarPricePrediction.Repositories.csproj" />
   </ItemGroup>
 
 </Project>
