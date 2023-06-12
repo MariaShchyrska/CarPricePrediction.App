@@ -95,6 +95,7 @@
             this.buttonEditCar.TabIndex = 4;
             this.buttonEditCar.Text = "Редагувати дані про автомобіль";
             this.buttonEditCar.UseVisualStyleBackColor = true;
+            this.buttonEditCar.Click += new System.EventHandler(this.buttonEditCar_Click);
             // 
             // labelName
             // 

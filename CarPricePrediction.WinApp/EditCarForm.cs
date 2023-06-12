@@ -3,7 +3,6 @@ using CarPricePrediction.Repositories;
 using CarPricePrediction.Core.Context;
 using System;
 using System.Text.RegularExpressions;
-using System.Windows.Forms;
 
 namespace CarPricePrediction.WinApp
 {
@@ -24,7 +23,7 @@ namespace CarPricePrediction.WinApp
             textBoxName.Text = Car.Name;
             textBoxPrice.Text = Car.Price.ToString();
             textBoxKmsDriven.Text = Car.Kms_driven.ToString();
-            textBoxOwner.Text = Car.Owner;
+            textBoxOwner.Text = Regex.Replace(Car.Owner, "[^0-9]", "");
             textBoxYear.Text = Car.Year.ToString();
         }
 
@@ -43,7 +42,7 @@ namespace CarPricePrediction.WinApp
             }
             if (!double.TryParse(textBoxKmsDriven.Text, out double kmsDriven))
             {
-                MessageBox.Show("Будь ласка, введіть коректний пробіг автомобіля.", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Будь ласка, введіть коректне км/год автомобіля.", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             if (string.IsNullOrWhiteSpace(textBoxOwner.Text) || !int.TryParse(textBoxOwner.Text, out int owner) || textBoxOwner.Text.Length != 1)
@@ -57,6 +56,7 @@ namespace CarPricePrediction.WinApp
                 return;
             }
 
+            // Оновлюємо властивості автомобіля на основі введених даних
             Car.Name = textBoxName.Text;
             Car.Price = price;
             Car.Kms_driven = kmsDriven;

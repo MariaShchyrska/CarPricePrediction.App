@@ -1,11 +1,7 @@
 using CarPricePrediction.Core.Entities;
 using CarPricePrediction.Repositories;
 using CarPricePrediction.Core.Context;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text.RegularExpressions;
-using System.Windows.Forms;
 
 namespace CarPricePrediction.WinApp
 {
@@ -26,13 +22,6 @@ namespace CarPricePrediction.WinApp
             // Отримуємо список автомобілів з бази даних та оновлюємо елементи керування форми
             updateCarList();
         }
-
-        /*private void updateCarList()
-        {
-            var cars = carRepository.GetAll().ToList();
-            listBoxCars.Items.Clear();
-            listBoxCars.Items.AddRange(cars.ToArray());
-        }*/
 
         private void updateCarList()
         {
@@ -65,7 +54,7 @@ namespace CarPricePrediction.WinApp
             }
             if (!double.TryParse(textBoxKmsDriven.Text, out double kmsDriven))
             {
-                MessageBox.Show("Будь ласка, введіть коректний пробіг автомобіля.", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Будь ласка, введіть коректне значення км/год автомобіля.", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             if (string.IsNullOrWhiteSpace(textBoxOwner.Text) || !int.TryParse(textBoxOwner.Text, out int owner) || textBoxOwner.Text.Length != 1)
@@ -139,7 +128,6 @@ namespace CarPricePrediction.WinApp
                 }
             }
         }
-
         private void buttonEditCar_Click(object sender, EventArgs e)
         {
             if (listBoxCars.SelectedItem != null)
